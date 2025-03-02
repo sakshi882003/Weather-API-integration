@@ -12,7 +12,7 @@ public class WeatherController {
     @Autowired
     private WeatherService weatherService;
 
-    @GetMapping("/weather")
+    @GetMapping("/weather") // getting weather api here
     public WeatherResponse getWeather() {
         return weatherService.getWeatherData();
     }
